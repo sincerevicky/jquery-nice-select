@@ -1,0 +1,84 @@
+.nice-select .list::-webkit-scrollbar {
+    width: 0
+}
+
+.nice-select .list {
+    margin-top: 55px;
+    border-top: 0;
+    border-radius: 0 0 5px 5px;
+    max-height: 210px;
+    overflow-y: scroll
+}
+
+.nice-select.has-multiple {
+    white-space: inherit;
+    min-height: 42px;
+    height: auto
+}
+
+.nice-select.has-multiple span.current {
+    border: 1px solid #CCC;
+    background: #EEE;
+    padding: 0 10px;
+    border-radius: 3px;
+    display: inline-block;
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 3px;
+    margin-right: 3px
+}
+
+.nice-select.has-multiple .multiple-options {
+    display: block;
+    line-height: 24px;
+    padding: 10px 0
+}
+
+.nice-select .nice-select-search-box {
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: 8;
+    padding: 5px;
+    background: #FFF;
+    opacity: 0;
+    pointer-events: none;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 0 0 1px rgba(68, 88, 112, .11);
+    -webkit-transform-origin: 50% 0;
+    -ms-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transform: scale(.75) translateY(-21px);
+    -ms-transform: scale(.75) translateY(-21px);
+    transform: scale(.75) translateY(-21px);
+    -webkit-transition: all .2s cubic-bezier(.5, 0, 0, 1.25), opacity .15s ease-out;
+    transition: all .2s cubic-bezier(.5, 0, 0, 1.25), opacity .15s ease-out
+}
+
+.nice-select .nice-select-search {
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-shadow: none;
+    color: #333;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 7px 12px;
+    margin: 0 10px 0 0;
+    width: 100%!important;
+    min-height: 36px;
+    line-height: 22px;
+    height: auto;
+    outline: 0!important
+}
+
+.nice-select.open .nice-select-search-box {
+    opacity: 1;
+    z-index: 10;
+    pointer-events: auto;
+    -webkit-transform: scale(1) translateY(0);
+    -ms-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0)
+}
