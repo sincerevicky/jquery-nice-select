@@ -3,17 +3,21 @@
 }
 
 .nice-select .list {
-    margin-top: 55px;
+    margin-top: 5px;
+    top: 100%;
     border-top: 0;
     border-radius: 0 0 5px 5px;
     max-height: 210px;
-    overflow-y: scroll
+    overflow-y: scroll;
+    padding: 52px 0 0
 }
 
 .nice-select.has-multiple {
     white-space: inherit;
-    min-height: 42px;
-    height: auto
+    height: auto;
+    padding: 7px 12px;
+    min-height: 36px;
+    line-height: 22px
 }
 
 .nice-select.has-multiple span.current {
@@ -31,13 +35,15 @@
 .nice-select.has-multiple .multiple-options {
     display: block;
     line-height: 24px;
-    padding: 10px 0
+    padding: 0
 }
 
 .nice-select .nice-select-search-box {
     box-sizing: border-box;
     position: absolute;
     width: 100%;
+    margin-top: 5px;
+    top: 100%;
     left: 0;
     z-index: 8;
     padding: 5px;
