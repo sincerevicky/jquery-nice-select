@@ -71,7 +71,8 @@ Made by Hernán Sartorio  */
                 var $selected_html = '';
                 $selected.each(function() {
                     $selected_option = $(this);
-                    $selected_html += '<span class="current">' + $selected_option.data('display') ||  $selected_option.text() + '</span>';
+                    $selected_text = $selected_option.data('display') ||  $selected_option.text();
+                    $selected_html += '<span class="current">' + $selected_text + '</span>';
                 });
                 $select_placeholder = $select.data('placeholder') || $select.attr('placeholder');
                 $select_placeholder = $select_placeholder == '' ? 'Select' : $select_placeholder;
